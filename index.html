@@ -2,56 +2,87 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Login Form</title>
-		<link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel="stylesheet">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/main.css">
+	<title>Formularios de Login</title>
+      <link rel="stylesheet" href=" https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <!-- Compiled and minified CSS -->
+	  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto:100,400" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<section class="main-container" style="background-size: cover;">
-		<div class="form-container">
-			<article class="left">
-				<div class="logo-container">
-					<img src="img/logo-form.png" alt="" class="img-responsive">
-				</div>
-				<div class="icon-container">
-					<a href="" class="fa fa-facebook social_icons"></a>
-					<a href="" class="fa fa-twitter social_icons"></a>
-					<a href="" class="fa fa-instagram social_icons"></a>
-					<a href="" class="fa fa-envelope social_icons"></a>
-				</div>
-				
-			</article>
-			<article class="right">
-				<h3 class="section-title">Bienvenido</h3>
-				<span class="divider"></span>
-				<p class="cta_text">Ingresa tus datos para acceder a la pataforma.</p>
-				<form action="" class="nube_form" id="nube_form" method="POST">
-					<div class="form-row">
-				      <i class="fa fa-user" aria-hidden="true"></i>    
-				      <input type="text" class="form-control" placeholder="Usuario" data-validation="required"  data-validation-error-msg="User name has to be an alphanumeric value (3-12 chars)"/>
-				    </div>
-				    <div class="form-row">
-				      <i class="fa fa-unlock-alt" aria-hidden="true"></i>      
-				      <input type="password" class="form-control" placeholder="Contraseña" data-validation="required"/>
-				    </div>
+	
+<main class="main-container">
+  <div class="row">
+    <section class="col m6  nube-form-container ">
+      <div class="logo-container">
+        <img src="img/logo.png" alt="" class="responsive-img">        
+      </div>
+      <form class="col s12 m12 l6 nube-form">
+              <div class="row">
+                <div class="input-field col s12">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="icon_prefix" type="text" class="validate nube-input">
+                  <label for="icon_prefix">Usuario o email</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12 m12">
+                  <i class="material-icons prefix">lock_outline</i>
+                  <input id="icon_prefix" type="password" class="validate nube-input">
+                  <label for="icon_prefix">Contraseña</label>
+                </div>
+              </div>
+              <p class="checkbox-container">
+                <input type="checkbox" id="test5" class="nube-check" />
+                <label for="test5">Recuérdame</label>
+              </p>
+              <button class="btn waves-effect waves-light nube-form-button" type="submit" name="action">Ingresar
+              
+              </button>
+              <div class="row cta">
+                <a href="">¿Olvidaste tu contraseña?</a>
+              </div>
+              <div class="row cta">
+                <a href="" class="sing-up">¿No tienes una cuenta? Crea una ahora</a>
+              </div>
+            </form>
+    </section>
+    <section class="col m6 derecha info-container">
+      <div class="logo-container">
+        <img src="img/logo-form.png" alt="" class="responsive-img">
 
-				    <input type="submit" value="Ingresar" class="submit_bttn">
-			    
-				</form>
-			</article>
-	</section>
+      </div>
+    <div class="feature-container">
+      <h4><span class="type-it">Soluciones tecnológicas personalizadas en la nube al mejor costo del mercado.</span></h4>
+
+    </div>
+    <div class="social-container">
+      <div class="icon-container">  
+        <a href="" class="fa fa-facebook"></a>
+        <a href="" class="fa fa-twitter"></a>
+        <a href="" class="fa fa-instagram"></a>
+        <a href="" class="fa fa-envelope"></a>
+      </div>
+    </div>
+    </section>
+    </div>
+    </section>
+      </div>
+    </div>
+  </div>
+
+</main>
 
 
-
-<script
+	<script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
-
-<script>
-	
-</script>
+	  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typeit@4.4.1/dist/typeit.min.js"></script>
 </body>
 </html>

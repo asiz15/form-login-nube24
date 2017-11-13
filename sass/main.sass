@@ -1,0 +1,115 @@
+$color-primary: #107abf
+$roboto: 'Roboto', sans-serif
+
+
+.cta
+	display: flex
+	justify-content: center
+	a 
+		font-family: 'Quicksand', sans-serif
+.derecha.info-container
+	padding-top: 5em !important
+	
+.info-container
+	height: 100vh
+	display: flex
+	flex-direction: column
+	align-items: center
+	background-image: url('../img/analytics-blue.png')
+	background-size: cover
+	@media (min-width: 200px) and (max-width: 600px)
+		display: none
+
+	.logo-container
+		width: 20%
+		margin-top: 5%
+		margin-bottom: 19%
+	.feature-container
+		width: 70%
+		h4
+			color: #fff
+			text-align: center
+			font-size: 2.5em
+			font-family: 'Quicksand', sans-serif
+	.social-container
+		@media (min-width: 200px) and (max-width: 600px)
+			display: none
+		position: absolute
+		bottom: 3em
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		.icon-container
+			display: flex
+			justify-content: space-around
+		a.fa
+			width: 35px
+			height: 35px
+			border-radius: 50%
+			display: flex
+			justify-content: center
+			align-items: center
+			border: 1px solid #fff
+			outline: none !important
+			background-color: rgba(0,0,0,0)
+			font-size: 1.2em
+			color: #fff
+			margin: .5em
+			&:hover
+				background-color: $color-primary
+.nube-form-container
+	display: flex
+	padding-top: 5em !important
+	flex-direction: column
+	align-items: center
+	justify-content: center
+
+
+	.logo-container
+		width: 40%
+		@media (min-width: 200px) and (max-width: 600px)
+			width: 60%
+	.nube-form
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		width: 60%
+		margin-top: 5%
+		margin-right: 25%
+		padding: 3em 2em 2em 2em
+		.row
+			width: 100%
+		.checkbox-container
+			margin-bottom: 2em
+		.nube-form-button
+			margin-bottom: 3em
+			width: 80% 
+			background-color: $color-primary
+		.prefix
+			color: $color-primary
+		input.nube-input
+			color: $color-primary
+			&:focus
+				border-bottom: 1px solid $color-primary
+				color: $color-primary
+				+ label
+					color: $color-primary
+					font-weight: 700
+		.nube-check[type="checkbox"] 
+			+ label
+				&:before
+					border: 2px solid $color-primary
+					background: transparent
+		.nube-check[type="checkbox"]
+			&:checked 
+				+ label
+					color: $color-primary
+					font-weight: 700
+					&:before
+						border: 2px solid transparent
+						border-bottom: 2px solid $color-primary
+						border-right: 2px solid $color-primary
+						background: transparent
+
