@@ -111,7 +111,7 @@ label.nube-label {
       color: #107abf; }
     .nube-form-container .nube-form input.nube-input {
       color: #107abf;
-      font-size: 1rem; }
+      font-size: 0.8rem !important; }
       .nube-form-container .nube-form input.nube-input:focus {
         border-bottom: 1px solid #107abf;
         color: #107abf;
