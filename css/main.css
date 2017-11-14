@@ -115,7 +115,7 @@ label.nube-label {
       .nube-form-container .nube-form input.nube-input:focus {
         border-bottom: 1px solid #107abf;
         color: #107abf;
-        font-size: 0.5rem; }
+        font-size: 0.8em !important; }
         .nube-form-container .nube-form input.nube-input:focus + label {
           color: #107abf;
           font-weight: 700;
