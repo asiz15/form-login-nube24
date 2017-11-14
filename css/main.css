@@ -1,8 +1,12 @@
-html, body {
-  overflow: hidden; }
+@media (min-width: 601px) {
+  html, body {
+    overflow: hidden; } }
 
 .main-container {
   max-height: 90vh; }
+
+label.nube-label {
+  font-size: 0.8em; }
 
 .cta {
   display: flex;
@@ -13,13 +17,16 @@ html, body {
 .derecha.info-container {
   padding-top: 5em !important; }
 
-.nube-footer {
-  position: absolute;
-  bottom: 3em;
-  text-align: center; }
-  .nube-footer h4 {
-    font-family: "Quicksand", sans-serif;
-    font-size: 1em; }
+@media (min-width: 601px) {
+  .nube-footer {
+    bottom: 3em;
+    position: absolute; } }
+.nube-footer h4 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1em; }
+  @media (min-width: 200px) and (max-width: 600px) {
+    .nube-footer h4 {
+      font-size: 0.8em; } }
 
 .info-container {
   height: 100vh;
@@ -104,14 +111,15 @@ html, body {
       color: #107abf; }
     .nube-form-container .nube-form input.nube-input {
       color: #107abf;
-      font-size: 0.8rem; }
+      font-size: 0.5rem; }
       .nube-form-container .nube-form input.nube-input:focus {
         border-bottom: 1px solid #107abf;
         color: #107abf;
-        font-size: 0.8rem; }
+        font-size: 0.5rem; }
         .nube-form-container .nube-form input.nube-input:focus + label {
           color: #107abf;
-          font-weight: 700; }
+          font-weight: 700;
+          font-size: 1rem !important; }
     .nube-form-container .nube-form .nube-check[type="checkbox"] + label:before {
       border: 2px solid #107abf;
       background: transparent; }
